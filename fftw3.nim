@@ -6,7 +6,7 @@ when defined(windows):
 elif defined(macosx):
     const LibraryName = "libfftw3(|.0).dylib"
 else:
-    const LibraryName = "libfftw3.so"
+    const LibraryName = "libfftw3.so(|.3)"
 
 type 
   fftw_r2r_kind* = enum 
